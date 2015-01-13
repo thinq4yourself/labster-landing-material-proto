@@ -1,0 +1,13 @@
+---
+layout: default
+modal-id: 6
+date: 2007-09-04
+img: submarine.png
+alt: Stories about people living a meaningful life
+project-date: September 2007
+project: Think For Yourelf
+url: http://thinq4yourself.com
+category: Editor At Large
+description: <a href="https://medium.com/think-for-yourself" target="_blank">Think For Yourself</a> is a collection of stories about people living a meaningful life through experience and tapping into their human potential. It is also the publisher where Fedora is Editor At Large and writes for various outfits big and small.  
+
+---

@@ -1,0 +1,70 @@
+# Serving
+detach:  false
+port:    4000
+host:    0.0.0.0
+baseurl: "" # does not include hostname
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: pretty
+highlighter: pygments
+lsi:         false
+excerpt_separator: "\n\n"
+
+# Custom collections
+collections:
+  videos:
+    output: false
+
+# Site settings
+title: Beard & Fedora
+email: badassery@beardandfedora.com
+description: "We are a Beard and a Fedora. We make things. We also write things. We also travel."
+# Pssst..we edit the above line in _config.yml. It will appear in our document head meta (for Google search results) 
+# and in our feed.xml site description.
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 8e44ad #80B3FF
+  secondary: 2c3e50 #FD6E8A
+  secondary-dark: 233140 #A2122F
+  tirtuary: 9b59b6 #FD6E8A
+  tirtuary-dark: 95a5a6 #A2122F
+  body-bg: ecf0f1
+  bg: ecf0f1
+  btn-success: 27AE60
+  btn-success-hover: 2ECC71
+  btn-primary: 8e44ad
+  btn-primary-hover: 9B59B6
+  btn-info: BDC3C7
+  btn-info: 95A5A6
+  btn-warning: D35400
+  btn-warning-hover: E67E22
+  brn-danger: C0392B
+  brn-danger-hover: C0E74C3C392B
+  
+  
+  
+# Footer settings
+footer:
+  copyleft: Beard & Fedora
+  location: Location
+  social: Around the Interwebs
+  credits: Credits
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/BeardandFedora
+  - title: github
+    url: http://github.com/BeardandFedora
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: <i class="fa fa-map-marker text-danger"></i> On The Road
+  - line: Somwehere on Earth
+  
+# Credits content
+credits: 'This is free to use, <a href="http://opensource.org/" target="blank">open source</a>, and in the <a href="https://creativecommons.org" target="blank">creative commons</a>.'
