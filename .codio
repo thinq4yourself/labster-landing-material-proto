@@ -10,7 +10,7 @@
   "preview": {
         "Project Index (static)": "https://{{domain}}/{{index}}",
         "Current File (static)": "https://{{domain}}/{{filepath}}",
-        "Box URL": "http://{{domain}}:4000/",
+        "Box URL": "http://{{domain}}:3000/",
         "Box URL SSL": "https://{{domain}}:9500/"
   }
 }

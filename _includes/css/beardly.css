@@ -28,33 +28,43 @@ a.active {
 }
 .btn-success {
     background-color: #{{ site.color.btn-success }};
+    border-color: #{{ site.color.btn-success }};
 }
 .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open>.dropdown-toggle.btn-success {
     background-color: #{{ site.color.btn-success-hover }};
+    border-color: #{{ site.color.btn-success-hover }};
 }
 .btn-primary {
     background-color: #{{ site.color.btn-primary }};
+    border-color: #{{ site.color.btn-primary }};
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
     background-color: #{{ site.color.btn-primary-hover }};
+    border-color: #{{ site.color.btn-primary-hover }};
 }
 .btn-info {
     background-color: #{{ site.color.btn-info }};
+    border-color: #{{ site.color.btn-info }};
 }
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open>.dropdown-toggle.btn-info {
     background-color: #{{ site.color.btn-info-hover }};
+    border-color: #{{ site.color.btn-info-hover }};
 }
 .btn-warning {
     background-color: #{{ site.color.btn-warning }};
+    border-color: #{{ site.color.btn-warning }};
 }
 .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open>.dropdown-toggle.btn-warning {
     background-color: #{{ site.color.btn-warning-hover }};
+    border-color: #{{ site.color.btn-warning-hover }};
 }
 .btn-danger {
     background-color: #{{ site.color.btn-danger }};
+    border-color: #{{ site.color.btn-danger }};
 }
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open>.dropdown-toggle.btn-danger {
     background-color: #{{ site.color.btn-danger-hover }};
+    border-color: #{{ site.color.btn-danger-hover }};
 }
 .text-primary {color: #{{ site.color.btn-primary }};}
 .text-info {color: #{{ site.color.btn-info }};}
@@ -455,6 +465,7 @@ footer .footer-below {
 
 .portfolio-modal .modal-content .item-details {
     margin: 30px 0;
+    font-size: 20px;
 }
 
 .portfolio-modal .close-modal {
