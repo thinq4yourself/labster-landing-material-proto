@@ -28,3 +28,7 @@ description: The description of the project
 =========
 
 For more details, read some Jekyll [documentation](http://jekyllrb.com/)
+
+---
+
+![Screenshot](screenshot.png)
