@@ -2,7 +2,7 @@
 detach:  false
 port:    3000
 host:    0.0.0.0
-baseurl: "/dotcom" # BLANK for local or domain based, /dotcom for github pages
+baseurl: "" # BLANK for local or domain based, /dotcom for github pages
 
 # Build settings
 markdown: kramdown
