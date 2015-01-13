@@ -6,7 +6,7 @@ img: weblewinn.png
 alt: image-alt
 project-date: August 2013
 project: We Blew Inn
-url: http://weblewinn.com
+siteurl: http://weblewinn.com
 category: Startup & Brand Creation
 description: As a way to unhook from the world of business and startups, Fedora went into the mountains and built a brand, business model, and concept to launch the adventure vacation rental called the We Blew Inn. He also hosted <a href="http://www.sproutcamp.co/founderscamp/" target="_blank">Founders Camp</a> there, which is a whole other story in itself. 
 

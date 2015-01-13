@@ -6,7 +6,7 @@ img: abaa.png
 alt: A Beard Across America
 project-date: October 2013
 project: A Beard Across America
-url: http://abeardacrossamerica.com
+siteurl: http://abeardacrossamerica.com
 category: Wrote A Book
 description: <a href="http://abeardacrossamerica.com" target="_blank">A Beard Across America</a> is filled with inspiring and motivating stories that capture Tyler Goelz's road-trip across America. Compiled of stories written to help readers look at something “impossible” and redefine it as not only achievable, but achievable a lot quicker than expected.
 
