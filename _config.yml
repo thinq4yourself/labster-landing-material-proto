@@ -2,7 +2,7 @@
 detach:  false
 port:    4000
 host:    0.0.0.0
-baseurl: "" # does not include hostname
+baseurl: "beardandfedora.com" # BLANK for domain based, beardandfedora.com for github pages based
 
 # Build settings
 markdown: kramdown
