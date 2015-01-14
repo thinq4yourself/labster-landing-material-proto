@@ -5,7 +5,9 @@ Jekyll theme based for a Beard and a Fedora dot com
 
 ## How to use
  - Place a image in `/img/portoflio/`
- - Create posts to display projects. Use the follow as an example:
+ - Create posts to display projects with naming convention:
+   - `2007-09-04-t4y-6.markdown` OR `2007-09-04-t4y-6.md`
+ - Use the follow front matter as an example:
  
 ```txt
 
@@ -25,9 +27,21 @@ description: The description of the project
 ```
 
 
-=========
+---
 
-For more details, read some Jekyll [documentation](http://jekyllrb.com/)
+### Useful tips
+
+`$ jekyll serve`
+Helps with working with Jekyll locally.
+
+`$ jekyll build`
+Builds into ___site__
+
+`$ got push github gh-pages`
+Builds into remote Github Pages
+
+
+### For more details, read some Jekyll [documentation](http://jekyllrb.com/)
 
 ---
 
