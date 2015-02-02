@@ -16,13 +16,13 @@ $(function() {
                 url: $form.attr('action'),
                 data: $form.serialize(),
                 cache: false,
-                dataType: 'json',
+                dataType: 'jsonp',
                 contentType: "application/json; charset=utf-8",
                 error: function(err) {
                     // Fail message
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
-                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that our bearded mail robot is not responding. Could you kindly try again? Thanks. - " + err.msg + "");
+                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that our bearded mail robot is not responding. Could you kindly try again? Thanks. <br /> " + err.msg + "");
                     $('#success > .alert-danger').append('</div>');
                 },
                 success: function(data) {
@@ -40,6 +40,7 @@ $(function() {
                         $('#success > .alert-success').append('</div>');
                         //clear all fields
                         $('#contactForm').trigger("reset");
+                        $('#mc-embedded-subscribe').hide();
                     }
                 }
             });
