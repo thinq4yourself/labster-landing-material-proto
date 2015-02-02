@@ -3,7 +3,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width">
+    <meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/baf.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/baf.png">
+	<link rel="apple-touch-icon" href="img/baf.png">
+	<link rel="shortcut icon" href="img/baf.png" />
     <meta name="description" content="{{ site.description }}">
+    <!-- open graph -->
+    <meta property="og:url" content="http://www.beardandfedora.com">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} | {{ site.tagline }}">
+    <meta property="og:description" content="{{ site.description }}">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="http://www.beardandfedora.com/img/baf.png">
+    <!-- open graph -->
+    <!-- twitter cards -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@BeardandFedora">
+	<meta name="twitter:url" content="http://www.beardandfedora.com">
+	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} | {{ site.tagline }}">
+	<meta name="twitter:description" content="{{ site.description }}">
+	<meta name="twitter:image" content="http://www.beardandfedora.com/img/baf.png">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="stylesheet" href="{{ "/beardlyfedora.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
