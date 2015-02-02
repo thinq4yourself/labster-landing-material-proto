@@ -6,8 +6,8 @@
                     <div class="footer-col col-md-4">
                         <h3>{{ site.footer.location }}</h3>
                         <p>
-                            {% for adress in site.address %}
-                                {{ adress.line }} <br>
+                            {% for location in site.location %}
+                                {{ location.line }} <br>
 		                    {% endfor %}
                         </p>
                     </div>
@@ -16,7 +16,7 @@
                         <ul class="list-inline">
                             {% for network in site.social %}
                             <li>
-                                <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-fw fa-{{ network.title }}"></i></a>
+                                <a href="{{ network.url }}" title="{{ network.title }}" data-toggle="tooltip" data-placement="top" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-{{ network.site }} {{ network.options }}"></i></a>
                             </li>
 		                    {% endfor %}
                         </ul>

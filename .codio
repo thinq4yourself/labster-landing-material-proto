@@ -3,7 +3,10 @@
 
 // Run button configuration
   "commands": {
-        "Node version": "node --version"
+        "Node version": "node --version",
+        "Local Serve": "jekyll serve",
+        "Build": "jekyll build",
+        "Live Push": "git push github gh-pages"
   },
 
 // Preview button configuration

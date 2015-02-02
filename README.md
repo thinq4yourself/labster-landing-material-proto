@@ -37,7 +37,7 @@ Helps with working with Jekyll locally.
 `$ jekyll build`
 Builds into ___site__
 
-`$ got push github gh-pages`
+`$ git push github gh-pages`
 Builds into remote Github Pages
 
 
