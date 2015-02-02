@@ -60,72 +60,35 @@ social:
   - title: Beard & Fedora on Github
     site: github
     url: http://github.com/BeardandFedora
-    options: 
   - title: Beard & Fedora on Facebook
     site: facebook
     url: http://facebook.com/BeardandFedora
-    options: 
   - title: Beard & Fedora on Twitter
     site: twitter
     url: http://twitter.com/BeardandFedora
-    options: 
   - title: Fedora on Behance
     site: behance
     url: http://be.net/thinq4yourself
-    options: 
   - title: Fedora on Angel List
     site: angellist
     url: http://angel.co/joel-serino
-    options:
   - title: Fedora on LinkedIn
     site: linkedin
     url: http://lnkd.in/9tetJY
   - title: Beard on the Web
     site: html5
     url: http://tylergoelz.com
-    options: 
   - title: Beard on Angel List
     site: angellist
     url: https://angel.co/tylergoelz
-    options:
   - title: Beard on LinkedIn
     site: linkedin-square
     url: http://www.linkedin.com/in/tylergoelz
-    options: 
 
 # Location info (add as many lines as necessary)
 location:
   - line: <a href="http://twitter.com/tylergoelz" target="blank" class="text-success">Beard</a> | <i class="fa fa-map-marker text-success"></i> On The Road
   - line: <a href="http://twitter.com/thinq4yourself" target="blank" class="text-danger">Fedora</a> | <i class="fa fa-map-marker text-danger"></i> On The Road
 
-# Credits content
-credits: 'This is <a href="https://github.com/BeardandFedora/dotcom" target="blank">free to use</a>, <a href="http://opensource.org/" target="blank">open source</a>, and in the <a href="https://creativecommons.org" target="blank">creative commons</a>. Built using Jekyll, Bootstrap, Font Awesome, and Github.'uilt using Jekyll, Bootstrap, Font Awesome, and Github.'
-ttp://be.net/thinq4yourself
-    options: 
-  - title: Fedora on Angel List
-    site: angellist
-    url: http://angel.co/joel-serino
-    options:
-  - title: Fedora on LinkedIn
-    site: linkedin
-    url: http://lnkd.in/9tetJY
-  - title: Beard on the Web
-    site: html5
-    url: http://tylergoelz.com
-    options: 
-  - title: Beard on Angel List
-    site: angellist
-    url: https://angel.co/tylergoelz
-    options:
-  - title: Beard on LinkedIn
-    site: linkedin-square
-    url: http://www.linkedin.com/in/tylergoelz
-    options: 
-
-# Postal address (add as many lines as necessary)
-location:
-  - line: <a href="http://twitter.com/tylergoelz" target="blank" class="text-success">Beard</a> | <i class="fa fa-map-marker text-success"></i> On The Road
-  - line: <a href="http://twitter.com/thinq4yourself" target="blank" class="text-danger">Fedora</a> | <i class="fa fa-map-marker text-danger"></i> On The Road
-  
 # Credits content
 credits: 'This is <a href="https://github.com/BeardandFedora/dotcom" target="blank">free to use</a>, <a href="http://opensource.org/" target="blank">open source</a>, and in the <a href="https://creativecommons.org" target="blank">creative commons</a>. Built using Jekyll, Bootstrap, Font Awesome, and Github.'
