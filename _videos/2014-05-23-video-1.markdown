@@ -2,7 +2,7 @@
 layout: default
 video-id: xS7HmZMqY6Q
 date: 2014-05-23
-title: Timothy Ferriss - Experiments in Lifestyle Design
-description: Tim Ferriss takes an analytical, data centric approach to everything from dancing to learning languages, finding love, cooking, and working out. He's a master of efficiency and making his own way. Interviewed by Make, founding editor Mark Frauenfelder. From the Bay Area Maker Faire 2014 Center Stage.
+title: Labster Intro 
+description: Description goes here.
 
 ---

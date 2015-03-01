@@ -1,60 +1,30 @@
-   <!-- We have to get around, don't we? -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+      <!-- Add '.navbar-sticky' to make navbar stuck to top on document scroll -->
+      <header class="navbar gray navbar-sticky">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display because mobile is lovely -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top">{{ site.title }}</a>
-            </div>
-
-            <!-- Do you like toggling? -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#colophon">Colophon</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+          <!-- Logo -->
+          <a href="#" class="logo scrollup">
+            <img src="images/labster-icon-small.png" alt="Labster">
+            {{ site.title }}
+          </a>
+          <!-- Social Buttons -->
+          <div class="social-buttons">
+            <a href="#" class="sb-twitter"><i class="bi-twitter"></i></a>
+            <a href="#" class="sb-google-plus"><i class="bi-gplus"></i></a>
+            <a href="#" class="sb-facebook"><i class="bi-facebook"></i></a>
+          </div>
+          <!-- Toolbar -->
+          <div class="toolbar">
+            <span>{{ site.tagline }}</span>
+            <a href="#" class="btn btn-ghost btn-primary icon-left"><i class="bi-apple"></i> Sign Up</a>
+            <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="action-btn">Sign in</a>
+            <div class="nav-toggle" data-offcanvas="open"><i class="flaticon-list26"></i></div>
+          </div>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
+      </header>   
 
-    <!-- I've Lost My Head.. -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/baf.png" alt="{{ site.title }}">
-                    <div class="intro-text">
-                        <span class="name">{{ site.title }}</span>
-                        <hr class="star-light">
-                        <span class="skills">{{ site.tagline }}</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
 <!--
         {% for page in site.pages %}
           {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
         {% endfor %}
  -->
-`
+

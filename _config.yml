@@ -19,10 +19,10 @@ collections:
     output: false
 
 # Site settings
-title: Beard & Fedora
-tagline: Idea Makers - Story Tellers - Life Experiencers
-email: badassery@beardandfedora.com
-description: "We are a Beard and a Fedora. We make things. We also write things. We also travel."
+title: Labster
+tagline: Empowering scientists to change the world.
+email: hello@labster.com
+description: "Empowering scientists to change the world."
 # Pssst..we edit the above line in _config.yml. It will appear in our document head meta (for Google search results) 
 # and in our feed.xml site description.
 
@@ -48,47 +48,29 @@ color:
 
 # Footer settings
 footer:
-  copyleft: Beard & Fedora
+  copyright: Labster
   location: Location
-  social: Around the Interwebs
+  social: Social
   credits: Credits
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 #  See http://fortawesome.github.io/Font-Awesome/icons/
 # For options example: fa-spin | see http://fortawesome.github.io/Font-Awesome/examples/ for more info
 social:
-  - title: Beard & Fedora on Github
-    site: github
-    url: http://github.com/BeardandFedora
-  - title: Beard & Fedora on Facebook
+  - title: Labster on Facebook
     site: facebook
-    url: http://facebook.com/BeardandFedora
-  - title: Beard & Fedora on Twitter
+    url: https://facebook.com/labster
+  - title: Labster on Twitter
     site: twitter
-    url: http://twitter.com/BeardandFedora
-  - title: Fedora on Behance
-    site: behance
-    url: http://be.net/thinq4yourself
-  - title: Fedora on Angel List
-    site: angellist
-    url: http://angel.co/joel-serino
-  - title: Fedora on LinkedIn
-    site: linkedin
-    url: http://lnkd.in/9tetJY
-  - title: Beard on the Web
-    site: html5
-    url: http://tylergoelz.com
-  - title: Beard on Angel List
-    site: angellist
-    url: https://angel.co/tylergoelz
-  - title: Beard on LinkedIn
-    site: linkedin-square
-    url: http://www.linkedin.com/in/tylergoelz
+    url: https://twitter.com/labster
+  - title: Labster on Google+
+    site: twitter
+    url: https://plus.google.com/labster
+
 
 # Location info (add as many lines as necessary)
 location:
-  - line: <a href="http://twitter.com/tylergoelz" target="blank" class="text-success">Beard</a> | <i class="fa fa-map-marker text-success"></i> On The Road
-  - line: <a href="http://twitter.com/thinq4yourself" target="blank" class="text-danger">Fedora</a> | <i class="fa fa-map-marker text-danger"></i> On The Road
+  - line: TBD
 
 # Credits content
-credits: 'This is <a href="https://github.com/BeardandFedora/dotcom" target="blank">free to use</a>, <a href="http://opensource.org/" target="blank">open source</a>, and in the <a href="https://creativecommons.org" target="blank">creative commons</a>. Built using Jekyll, Bootstrap, Font Awesome, and Github.'
+credits: 'html os ok'

@@ -3,15 +3,31 @@
 
   {% include head.html %}
 
-    <body id="page-top" class="index">
-
-    {% include header.html %}
-    {% include portfolio_grid.html %}
-    {% include about.html %}
-    {% include contact.html %}
-    {% include footer.html %}
+    <body id="page-top" class="index fixed-footer">
+    <div id="preloader">
+      <div class="logo">
+        <img src="images/labster-icon-large.png" alt="Labster">
+        <img src="images/labster-logo.png" alt="Labster">
+      </div>
+    </div>
+    <div class="fake-scrollbar"></div>
+    {% include offcanvas.html %}
     {% include modals.html %}
-    {% include videos.html %}
+    {% include intro.html %}
+    <div class="content-wrap">
+    {% include header.html %}
+    {% include parts/feature-tabs.html %}
+    {% include parts/app-features.html %}
+    {% include parts/lab-gallery.html %}
+    {% include parts/video-block.html %}
+    {% include parts/post-block.html %}
+    {% include parts/story-block.html %}
+    {% include parts/cta-block-1.html %}
+    {% include parts/benefit-tabs.html %}
+    {% include parts/testimonial-block.html %}
+    {% include parts/cta-block-2.html %}
+    </div>
+    {% include footer.html %}
     {% include js.html %}
 
     </body>

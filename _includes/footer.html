@@ -1,50 +1,50 @@
-    <!-- Viva La Foot! -->
-    <footer class="text-center" id="colophon">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>{{ site.footer.location }}</h3>
-                        <p>
-                            {% for location in site.location %}
-                                {{ location.line }} <br>
-		                    {% endfor %}
-                        </p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>{{ site.footer.social }}</h3>
-                        <ul class="list-inline">
-                            {% for network in site.social %}
-                            <li>
-                                <a href="{{ network.url }}" title="{{ network.title }}" data-toggle="tooltip" data-placement="top" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-{{ network.site }} {{ network.options }}"></i></a>
-                            </li>
-		                    {% endfor %}
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>{{ site.footer.credits }}</h3>
-                        <p>{{ site.credits }}</p>
-                    </div>
-                </div>
+    <footer class="footer padding-top-3x">
+      <div class="container space-top">
+        <!-- Footer Head -->
+        <div class="footer-head">
+          <div class="logo">
+            <a href="#" class="srollup"><img src="images/labster-icon-large.png" alt="Labster"></a>
+          </div>
+          <div class="info">
+            <h2>{{ site.footer.credits }}</h2>
+            <p>{{ site.footer.location }}</p>
+            <span>Label</span>
+            <div class="rating">
+              <i class="bi-star"></i>
+              <i class="bi-star"></i>
+              <i class="bi-star"></i>
+              <i class="bi-star"></i>
+              <i class="bi-star"></i>
+              <span>(33)</span>
             </div>
+            <a href="#" class="btn btn-ghost btn-plus btn-primary btn-sm">Get Started</a>
+          </div>
         </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyleft 20{{ site.time | date: '%y' }} | {{ site.footer.copyleft }}
-                    </div>
-                </div>
+        <div class="body padding-top-2x">
+          <!-- Copyright -->
+          <div class="column copyright">
+            <p>Copyright 20{{ site.time | date: '%y' }} | {{ site.footer.copyright }}</p>
+          </div>
+          <!-- Gadget (Middle Column) -->
+          <div class="column hidden-sm hidden-xs">
+            <div class="gadget">
+              <img src="images/footer/screen.png" alt="Screen">
             </div>
+          </div>
+          <nav class="column footer-nav">
+            <ul>
+              <li><a href="press.html">Press Kit</a></li>
+              <li><a href="legal.html">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="legal.html">Legal</a></li>
+              <li><a href="#">Security</a></li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </footer>
-
     <div class="scroll-top page-scroll visible-xs visble-sm">
         <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-a class="btn btn-primary" href="#page-top">
             <i class="fa fa-chevron-up"></i>
         </a>
     </div>

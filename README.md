@@ -1,10 +1,10 @@
-Beard & Fedora Jekyll theme
+Labster Jekyll theme
 =========================
 
-Jekyll theme based for a Beard and a Fedora dot com
+Jekyll theme based for labster dot com landing page
 
 ## How to use
- - Place a image in `/img/portoflio/`
+ - Place a image in `/img/gallery/`
  - Create posts to display projects with naming convention:
    - `2007-09-04-t4y-6.markdown` OR `2007-09-04-t4y-6.md`
  - Use the follow front matter as an example:
@@ -15,13 +15,13 @@ Jekyll theme based for a Beard and a Fedora dot com
 layout: default
 modal-id: 1
 date: 2015-01-08
-img: cabin.png
+img: tablet.png
 alt: This is the alt text for the image
-project-date: July 2014
-project: We Blew Inn
-url: http://weblewinn.com
-category: Adventure Travel
-description: The description of the project
+feature-date: July 2014
+feature: Sample feature
+url: http://labster.com
+category: Education
+description: The tagline or such
 
 ---
 ```

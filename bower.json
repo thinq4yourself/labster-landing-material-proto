@@ -1,0 +1,35 @@
+{
+  "name": "labster",
+  "version": "0.0.8",
+  "homepage": "http://labster.com",
+  "authors": [
+    "thinq4yourself <joel@thinq4yourself.com>"
+  ],
+  "description": "Empowering scientists to change the world.",
+  "main": "index.html",
+  "keywords": [
+    "labster",
+    "labs",
+    "virtual",
+    "reality",
+    "oculus",
+    "rift"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pace": "~1.0.2",
+    "modernizr": "~2.8.3",
+    "detectizr": "~2.0.0"
+  },
+  "resolutions": {
+    "modernizr": "~2.8.3"
+  }
+}
