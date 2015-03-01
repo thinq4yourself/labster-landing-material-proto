@@ -2,7 +2,7 @@
 layout: default
 modal-id: 6
 date: 2014-09-04
-img: sample.png
+img: thumb.png
 alt: sample alt
 feature-date: September 2014
 feature: Sample

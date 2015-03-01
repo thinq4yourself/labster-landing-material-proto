@@ -1,10 +1,10 @@
       <!-- Add '.navbar-sticky' to make navbar stuck to top on document scroll -->
-      <header class="navbar gray navbar-sticky">
+      <header class="navbar black navbar-sticky">
         <div class="container">
           <!-- Logo -->
           <a href="#" class="logo scrollup">
-            <img src="images/labster-icon-small.png" alt="Labster">
-            {{ site.title }}
+            <img src="images/labster-icon-large.png" alt="{{ site.title }}">
+            <img src="images/labster-logo.png" alt=" {{ site.title }}">
           </a>
           <!-- Social Buttons -->
           <div class="social-buttons">
@@ -15,7 +15,7 @@
           <!-- Toolbar -->
           <div class="toolbar">
             <span>{{ site.tagline }}</span>
-            <a href="#" class="btn btn-ghost btn-primary icon-left"><i class="bi-apple"></i> Sign Up</a>
+            <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-up" class="btn btn-ghost btn-primary icon-left"><i class="flaticon-delivery6"></i> Sign Up</a>
             <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="action-btn">Sign in</a>
             <div class="nav-toggle" data-offcanvas="open"><i class="flaticon-list26"></i></div>
           </div>

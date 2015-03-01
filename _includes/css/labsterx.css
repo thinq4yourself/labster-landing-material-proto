@@ -40,29 +40,10 @@
 		33. Contacts
 		34. Footer
 		35. Preloader
-		36. Components Demo Styles
+		36. Components Styles
 **/
 
 
-/** Google Font (Open Sans)
-***************************************/
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,800);
-
-/** Brand Icons (Social Networks)
-*************************************/
-@import'vendor/brand-icons.css';
-
-/** Flaticon iOS Style Stroke Icons
-************************************/
-@import'vendor/flaticon.css';
-
-/** Magnific Popup Plugin
-************************************/
-@import'vendor/magnific-popup.css';
-
-/** Custom Scrollbar
-************************************/
-@import'vendor/jquery.mCustomScrollbar.css';
 
 
 /** 01.CSS RESET
@@ -1950,6 +1931,10 @@ label.hover {
 }
 .navbar.gray {
 	background-color: #fafafa;
+}
+
+.navbar.black {
+	background-color: #000;
 }
 .navbar.navbar-fixed-top {
 	position: fixed;
@@ -5022,7 +5007,7 @@ a.icon-block {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-color: #fff;
+	background-color: transparent;
 	opacity: 1;
 	visibility: visible;
 	-webkit-transition: all .9s;

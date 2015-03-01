@@ -1,2 +1,13 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,800);
+
 {% include css/vendor/bootstrap.min.css %}
+
+{% include css/vendor/brand-icons.css %}
+
+{% include css/vendor/flaticon.css %}
+
+{% include css/vendor/magnific-popup.css %}
+
+{% include css/vendor/jquery.mCustomScrollbar.css %}
+
 {% include css/labsterx.css %}
