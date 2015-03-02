@@ -12,7 +12,7 @@ permalink: pretty
 highlighter: pygments
 lsi:         false
 excerpt_separator: "\n\n"
-
+ 
 # Custom collections
 collections:
   videos:
@@ -74,3 +74,80 @@ location:
 
 # Credits content
 credits: 'html os ok'
+
+
+
+
+# ############
+# Plugins
+# ############
+jekyll_ga:
+  service_account_email:    # service account email address
+  key_file: privatekey.p12  # service account private key file
+  key_secret: notasecret    # service account private key's password
+  profileID: ga:####        # profile ID 
+  start: last month         # Beginning of report
+  end: now                  # End of report
+  metric: ga:pageviews      # Metric code
+  segment:                  # optional
+  filters:                  # optional
+  sort: true                # Sort posts by this metric
+ 
+ 
+# ############
+# Prose config
+# ############
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://thinq4yourself.github.io/labster'
+  relativeLinks: 'http://thinq4yourself.github.io/labster/links.jsonp'
+  media: 'media'
+  metadata:
+    _posts:
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "blog"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "blog"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "splash"
+        field:
+          element: "text"
+          label: "Splash image"
+          value: ""
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Labs"
+              value: "labs"
+            - name: "Virtual Reality"
+              value: "virtual reality"
+            - name: "Oculus Rift"
+              value: "oculus rift"
+            - name: "Virtual Lab Course"
+              value: "virtual lab course"
+    _posts/static:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""

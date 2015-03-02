@@ -45,4 +45,11 @@ Builds into remote Github Pages
 
 ---
 
+### Plugins and architecture
+- [Google Analytics API](https://github.com/developmentseed/jekyll-ga#readme)
+- [Jekyll on Heroku](https://github.com/jamesward/jekyll-heroku)
+- [Jekyll Hook](https://github.com/developmentseed/jekyll-hook/)
+- [Jekyll on Heroku](http://www.jamesward.com/2014/09/24/jekyll-on-heroku)
+- [Prose for Jekyll](https://github.com/prose/starter)
+
 ![Screenshot](screenshot.png)
