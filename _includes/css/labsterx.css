@@ -424,6 +424,7 @@ ol {
 	font-size: 12px;
 	color: #bebebe;
 	margin-bottom: 30px;
+    background-color: transparent;
 }
 .badge .icon {
 	display: inline-block;

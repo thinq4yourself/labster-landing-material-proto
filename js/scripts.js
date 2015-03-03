@@ -1,9 +1,3 @@
-/*
- * Appica 2 HTML5 Theme v1.1
- * Copyright 2015 8Guild.com
- * All scripts for iOS Version
- */
-
 
 /*Document Ready*//////////////////////////////////////////////////////////////////////////////////////////////////////
 jQuery(document).ready(function($) {
@@ -13,7 +7,11 @@ jQuery(document).ready(function($) {
 	var intro = $('.intro');
 	var content = $('.content-wrap');
 	var footer = $('.footer');
-
+    
+    /* This turns the page into an editable page *
+	********************************************************************************/
+    $.fn.editable.defaults.mode = 'inline';
+    $('.editable').editable();
 
 	// Checking with Modernizr if it is touch device
 	// Touch Devices
@@ -49,7 +47,7 @@ jQuery(document).ready(function($) {
 		// Window load event
 		$(window).load(function() {
 
-			/** Keeping Logo and Phone at the bottom of teh page
+			/** Keeping Logo and Phone at the bottom of the page
 			**********************************************************/
 			$('.intro .column-wrap').css('height', $(window).height());
 
@@ -71,6 +69,8 @@ jQuery(document).ready(function($) {
 
 			// Detecting various OS / devices / browsers and adding classes to <html>
 			Detectizr.detect({detectScreen:false});
+            
+            
 		});
 
 		// Window resize event
