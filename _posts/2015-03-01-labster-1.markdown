@@ -1,10 +1,10 @@
 ---
-layout: default
-modal-id: 6
-date: 2014-09-04
+layout: material
+modal-id: 1
+date: 2015-03-01
 img: thumb.png
 alt: sample alt
-feature-date: September 2014
+feature-date: March 2015
 feature: Sample
 siteurl: http://labster.com
 category: Sample

@@ -19,6 +19,7 @@ collections:
     output: false
 
 # Site settings
+theme: material # labsterx & material are available
 title: Labster
 tagline: Empowering scientists to change the world.
 email: hello@labster.com
@@ -48,10 +49,10 @@ color:
 
 # Footer settings
 footer:
-  copyright: Labster
+  copyright: Labster ApS
   location: Location
   social: Social
-  credits: Credits
+  credits: Labster ApS
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 #  See http://fortawesome.github.io/Font-Awesome/icons/

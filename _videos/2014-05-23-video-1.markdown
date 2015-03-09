@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: material
 video-id: xS7HmZMqY6Q
 date: 2014-05-23
 title: Labster Intro 
