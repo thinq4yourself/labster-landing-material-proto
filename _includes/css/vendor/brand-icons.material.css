@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'brand-icons';
-  src: url('../../fonts/brand-icons.eot?14190516');
-  src: url('../../fonts/brand-icons.eot?14190516#iefix') format('embedded-opentype'),
-       url('../../fonts/brand-icons.woff?14190516') format('woff'),
-       url('../../fonts/brand-icons.ttf?14190516') format('truetype'),
-       url('../../fonts/brand-icons.svg?14190516#brand-icons') format('svg');
+  src: url('./fonts/brand-icons.eot?14190516');
+  src: url('./fonts/brand-icons.eot?14190516#iefix') format('embedded-opentype'),
+       url('./fonts/brand-icons.woff?14190516') format('woff'),
+       url('./fonts/brand-icons.ttf?14190516') format('truetype'),
+       url('./fonts/brand-icons.svg?14190516#brand-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
