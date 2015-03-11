@@ -173,7 +173,6 @@
 a.editable-click, 
 a.editable-click:hover {
     text-decoration: none;
-    border-bottom: dashed 1px #000;
     cursor: copy;
 }
 

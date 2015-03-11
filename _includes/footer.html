@@ -1,16 +1,21 @@
-    <footer class="footer padding-top-3x">
+    <footer class="footer fw-bg top-inner-shadow padding-top-3x">
       <div class="container space-top">
         <!-- Footer Head -->
-        <div class="footer-head">
-          <div class="logo">
-            <a href="#" class="srollup"><img src="images/labster-icon-large.png" alt="Labster"></a>
-          </div>
-          <div class="info">
-            <h2 class="editable" data-type="text" data-pk="8" data-url="" data-title="Title 3" data-name="">{{ site.footer.credits }}</h2>
-            <p class="editable" data-type="text" data-pk="8" data-url="" data-title="Title 3" data-name="">{{ site.footer.location }}</p>
-            <a href="#" class="btn btn-ghost btn-plus btn-primary btn-sm">Get Started</a>
-          </div>
+          <div class="footer-head-wrap">
+          <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="footer-head waves-effect waves-button waves-float">
+            <div class="logo">
+              <img src="images/labster-icon-large.png" alt="{{ site.title }}">
+            </div>
+            <div class="info">
+              <h2>{{ site.title }}</h2>
+              <p>{{ site.tagline }}</p>
+             <div class="rating">
+                <span>{{ site.email }}</span>
+              </div>
+            </div>
+          </a>
         </div>
+        
         <div class="body padding-top-2x">
           <!-- Copyright -->
           <div class="column copyright">

@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,800);
-
 {% include css/vendor/brand-icons.{{ site.theme }}.css %}
 
 {% include css/vendor/flaticon.{{ site.theme }}.css %}
@@ -8,10 +6,10 @@
 
 {% include css/vendor/jquery.mCustomScrollbar.css %}
 
-{% include css/vendor/bootstrap-editable.css %}
-
 {% include css/vendor/bootstrap-tour.min.css %}
 
 {% include css/vendor/waves.css %}
 
 {% include css/{{ site.theme }}.css %}
+
+{% include css/vendor/bootstrap-editable.css %}

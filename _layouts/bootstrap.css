@@ -1,0 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,800);
+
+{% include css/vendor/{{ site.theme }}.bootstrap.min.css %}
+{% include css/vendor/glyphicons.bootstrap.min.css %}

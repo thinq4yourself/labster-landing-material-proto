@@ -48,7 +48,7 @@ jQuery(document).ready(function($) {
 
     /* This turns the page into an editable page *
 	********************************************************************************/
-    $.fn.editable.defaults.mode = 'inline';
+    $.fn.editable.defaults.mode = 'inline'; // 'inline' OR 'popup'
     $('.editable').editable();
 
     

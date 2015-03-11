@@ -29,7 +29,7 @@
 		22. Video Block
 		23. Twitter Feed
 		24. Press Reviews
-		25. Team/Team Grid
+		25. Testimonial/ Team Grid
 		26. Pricing Plans
 		27. Blog/Press (Posts)
 		28. Pagination
@@ -37,11 +37,12 @@
 		30. Comments
 		31. Timeline
 		32. Bar Charts
-		33. Clients Logos
+		33. Customer Logos
 		34. Contacts
 		35. Footer
 		36. Preloader
-		37. Components Demo Styles
+		37. Component Style Guide
+        38. Plugins & Overrides
 **/
 
 
@@ -147,7 +148,7 @@ body {
 
 /* Links */
 a {
-	color: #008fed;
+	color: #2c7ab8; /* #008fed */
 	text-transform: uppercase;
 	text-decoration: none;
 	opacity: 1;
@@ -1063,7 +1064,7 @@ label.hover {
 	text-transform: uppercase;
 	text-align: center;
 	padding: 0 28px;
-	border: none;
+    border: none;
 	border-radius: 3px;
 	background-color: #fff;
 	vertical-align: middle;
@@ -1103,7 +1104,7 @@ label.hover {
 
 /* Button Variants */
 .btn-default {
-	background: #fff;
+	background: #ccc;
 }
 .btn-primary {
 	background-color: #008fed;
@@ -1158,6 +1159,53 @@ label.hover {
 .btn-flat.btn-danger:hover {
 	color: #e91e63 !important;
 }
+/* Ghost Buttons */
+.btn-ghost {
+	background: transparent; 
+    border: 1px solid #fff;
+}
+.btn-ghost.btn-default {
+	border-color: rgb(49,49,49);
+	color: rgb(49,49,49) !important;
+}
+.btn-ghost.btn-default:hover {
+	background-color: rgb(49,49,49);
+}
+.btn-ghost.btn-primary {
+	border-color: #007aff;
+	color: #007aff !important;
+}
+.btn-ghost.btn-primary:hover {
+	background-color: #007aff;
+}
+.btn-ghost.btn-success {
+	border-color: #4cd964;
+	color: #4cd964 !important;
+}
+.btn-ghost.btn-success:hover {
+	background-color: #4cd964;
+}
+.btn-ghost.btn-info {
+	border-color: #1ba9bf;
+	color: #1ba9bf !important;
+}
+.btn-ghost.btn-info:hover {
+	background-color: #1ba9bf;
+}
+.btn-ghost.btn-warning {
+	border-color: #ffcc00;
+	color: #ffcc00 !important;
+}
+.btn-ghost.btn-warning:hover {
+	background-color: #ffcc00;
+}
+.btn-ghost.btn-danger {
+	border-color: #ff2d55;
+	color: #ff2d55 !important;
+}
+.btn-ghost.btn-danger:hover {
+	background-color: #ff2d55;
+}
 .btn-primary, .btn-success,
 .btn-info, .btn-warning, .btn-danger, 
 .btn-primary:hover, .btn-success:hover,
@@ -1168,6 +1216,8 @@ label.hover {
 .light-color .btn-danger {
 	color: #fff !important;
 }
+
+
 
 /* Button Sizes */
 .btn-lg {
@@ -1235,20 +1285,21 @@ label.hover {
 }
 
 /* Special Buttons */
-.btn-google-play {
+.btn-see-labster {
 	position: relative;
 	padding: 18px 24px;
 	border-radius: 0;
 	height: auto;
 }
-.btn-google-play img {
+.btn-see-labster img {
 	display: block;
 	max-width: 168px;
 }
-.btn-google-play span {
+.btn-see-labster span {
 	display: block;
 	position: absolute;
-	color: #999;
+	color: #000;
+    text-shadow: 1px #fff;
 	font-size: 9px;
 	line-height: 1;
 	text-transform: none;
@@ -1321,6 +1372,76 @@ div.downloadable p {
 	left: 40px;
 	margin-top: -11px; 
 }
+.btn-plus {
+	position: relative;
+	height: 48px;
+	line-height: 46px;
+	padding: 0 30px;
+	border-radius: 8px;
+	font-size: 16px;
+	font-weight: normal;
+	text-transform: uppercase;
+} 
+.btn-plus:before {
+	position: absolute;
+	display: block;
+	content: "+";
+	top: -14px;
+	left: 5px;
+	font-size: 18px;
+}
+.btn.btn-light,
+.btn-ghost.btn-light,
+.light-color .btn-plus {
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: normal;
+	border-color: #fff !important;
+	opacity: 1 !important;
+}
+.btn-plus.btn-sm {
+	height: 30px;
+	line-height: 28px;
+	padding: 0 20px;
+	border-radius: 4px;
+}
+.btn-plus.btn-sm:before {
+	top: -7px;
+	left: 3px;
+	font-size: 12px;
+}
+.btn.btn-light {
+	background-color: #fff;
+	color: #3a3a3a !important;
+	font-weight: normal;
+}
+.btn-light.btn-primary {
+	color: #007aff !important; 
+}
+.btn-light.btn-success {
+	color: #4cd964 !important; 
+}
+.btn-light.btn-info {
+	color: #1ba9bf !important; 
+}
+.btn-light.btn-warning {
+	color: #ffcc00 !important; 
+}
+.btn-light.btn-danger {
+	color: #ff2d55 !important; 
+}
+.btn-ghost.btn-light {
+	color: #fff !important;
+	background-color: transparent;
+}
+.btn.btn-light:hover,
+.light-color .btn-plus:hover {
+	background-color: rgba(255,255,255,0.2);
+	color: #fff !important;
+}
+.light-color .btn {
+	opacity: 1 !important;
+}
 
 
 /** 07.INTRO
@@ -1357,14 +1478,14 @@ div.downloadable p {
 	width: 100%;
 	min-height: 100%;
 	opacity: .9;
-	background: rgb(58,28,255);
-	background: -moz-linear-gradient(top, rgb(58,28,255) 0%, rgb(27,169,191) 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgb(58,28,255)), color-stop(100%, rgb(27,169,191)));
-	background: -webkit-linear-gradient(top, rgb(58,28,255) 0%, rgb(27,169,191) 100%);
-	background: -o-linear-gradient(top, rgb(58,28,255) 0%, rgb(27,169,191) 100%);
-	background: -ms-linear-gradient(top, rgb(58,28,255) 0%, rgb(27,169,191) 100%);
-	background: linear-gradient(to bottom, rgb(58,28,255) 0%, rgb(27,169,191) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a1cff', endColorstr='#1ba9bf', GradientType=0 );
+	background: rgb(0,0,0);
+	background: -moz-linear-gradient(bottom, rgb(0,0,0) 0%, rgb(0,143,237) 100%);
+	background: -webkit-gradient(left bottom, left bottom, color-stop(0%, rgb(0,0,0)), color-stop(100%, rgb(0,143,237)));
+	background: -webkit-linear-gradient(bottom, rgb(0,0,0) 0%, rgb(0,143,237) 100%);
+	background: -o-linear-gradient(bottom, rgb(0,0,0) 0%, rgb(0,143,237) 100%);
+	background: -ms-linear-gradient(bottom, rgb(0,0,0) 0%, rgb(0,143,237) 100%);
+	background: linear-gradient(to top, rgb(0,0,0) 0%, rgb(0,143,237) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a1cff', endColorstr='#000', GradientType=0 );
 }
 
 /* Social Buttons */
@@ -1502,7 +1623,7 @@ div.downloadable p {
 }
 .intro .logo span {
 	display: block;
-	font-size: 16px;
+	font-size: 22px;
 	margin-top: 25px;
 	opacity: .5;
 }
@@ -1856,7 +1977,7 @@ div.downloadable p {
 	top: 0;
 }
 .navbar .container {
-	background-color: #008fed;
+	background-color: #000; /* og: #008fed */
     width: 100%;
 	height: 96px;
 	padding: 0 40px;
@@ -1889,9 +2010,12 @@ div.downloadable p {
 }
 .navbar .logo img {
 	display: inline-block;
-	width: 48px;
+	width: 55px;
 	margin-right: 12px;
 	vertical-align: middle;
+}
+.navbar .logo img.long {
+	width:auto;
 }
 .navbar .social-buttons {
 	display: inline-block;
@@ -2040,7 +2164,7 @@ div.downloadable p {
 	padding: 0 40px;
 }
 .offcanvas-nav .nav-head {
-	background-color: #008fed;
+	background-color: #16283a;
 }
 .offcanvas-nav .top-bar {
 	position: relative;
@@ -2249,7 +2373,7 @@ div.downloadable p {
 	display: inline-block;
 	list-style: none;
 	padding: 0;
-	margin-left: 10px;
+	margin-left: 0;
 }
 .offcanvas-nav .nav-link ul.pages a {
 	font-weight: 600;
@@ -2440,6 +2564,10 @@ div.downloadable p {
 .fw-bg.bg-align-top {
 	background-position: center top;
 }
+.fw-bg .container {
+	position: relative;
+	z-index: 10;
+}
 .fw-bg.partial-overlay:before {
 	display: block;
 	position: absolute;
@@ -2474,6 +2602,17 @@ div.downloadable p {
 	-moz-box-shadow: inset 0px -6px 10px 0px rgba(0,0,0,0.25);
 	box-shadow: inset 0px -6px 10px 0px rgba(0,0,0,0.25);
 }
+.fw-bg.overlay:before,
+.fw-bg.partial-overlay:before {
+	position: absolute;
+	display: block;
+	z-index: 1;
+	content: "";
+	width: 100%;
+	min-height: 100%;
+	top: 0;
+	left: 0;
+}
 .fw-bg.overlay.gradient-dark:before,
 .fw-bg.partial-overlay.gradient-dark:before {
 	opacity: .78;
@@ -2490,13 +2629,13 @@ div.downloadable p {
 .fw-bg.partial-overlay.gradient-blue-green:before {
 	opacity: .67;
 	background: rgba(0,255,128,1);
-	background: -moz-linear-gradient(top, rgba(0,255,128,1) 0%, rgba(0,119,255,1) 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,255,128,1)), color-stop(100%, rgba(0,119,255,1)));
-	background: -webkit-linear-gradient(top, rgba(0,255,128,1) 0%, rgba(0,119,255,1) 100%);
-	background: -o-linear-gradient(top, rgba(0,255,128,1) 0%, rgba(0,119,255,1) 100%);
-	background: -ms-linear-gradient(top, rgba(0,255,128,1) 0%, rgba(0,119,255,1) 100%);
-	background: linear-gradient(to bottom, rgba(0,255,128,1) 0%, rgba(0,119,255,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff80', endColorstr='#0077ff', GradientType=0 );
+	background: -moz-linear-gradient(top, rgba(0,184,214,1) 0%, rgba(150,203,75,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,184,214,1)), color-stop(100%, rgba(150,203,75,1)));
+	background: -webkit-linear-gradient(top, rgba(0,184,214,1) 0%, rgba(150,203,75,1) 100%);
+	background: -o-linear-gradient(top, rgba(0,184,214,1) 0%, rgba(150,203,75,1) 100%);
+	background: -ms-linear-gradient(top, rgba(0,184,214,1) 0%, rgba(150,203,75,1) 100%);
+	background: linear-gradient(to bottom, rgba(0,184,214,1) 0%, rgba(150,203,75,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b8d6', endColorstr='#96cb4b', GradientType=0 );
 }
 .fw-bg.overlay.gradient-red-blue:before,
 .fw-bg.partial-overlay.gradient-red-blue:before {
@@ -3206,14 +3345,14 @@ a.icon-block {
 .icon-block.box-float .text {
 	padding: 10px 15px 0 0;
 }
-.appica-versions .icon-block {
+.labster-versions .icon-block {
 	text-transform: none;
 	color: #757575;
 }
-.appica-versions .icon-block:hover {
+.labster-versions .icon-block:hover {
 	opacity: 1;
 }
-.appica-versions .icon-block h3 {
+.labster-versions .icon-block h3 {
 	font-size: 24px;
 	font-weight: 300;
 }
@@ -3244,16 +3383,16 @@ a.icon-block {
 .icon-block.light-color .icon {
 	color: #fff;
 }
-.appica-versions .icon-block .text {
+.labster-versions .icon-block .text {
 	margin-top: -15px;
 }
-.appica-versions .icon-block .text span {
+.labster-versions .icon-block .text span {
 	display: block;
 	font-size: 12px;
 	margin-top: -10px;
 }
 @media screen and (max-width: 480px) {
-	.appica-versions .icon-block .text h3 {
+	.labster-versions .icon-block .text h3 {
 		font-size: 18px;
 	}
 }
@@ -3728,7 +3867,8 @@ a.icon-block {
 .video-block a {
 	display: inline-block;
 	color: #fff;
-	font-weight: 300;
+	font-weight: 700;
+    font-size: 2em;
 	text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
 .video-block a:focus {
@@ -5465,3 +5605,17 @@ a.icon-block {
 		margin-left: 0;
 	}
 }
+
+/** 38. PLUGINS & OVERRIDES
+**********************************/
+.form-control {margin-bottom: 0;}
+.editable-buttons .btn {
+  height: 28px;
+  font-size: 14px;
+  line-height: 28px;
+  width: 28px;
+  padding: 2px;
+  margin: 0;
+}
+.editable-input .form-control {color: #000;}
+.editable-container {z-index: 2001;}
