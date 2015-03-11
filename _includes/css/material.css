@@ -173,6 +173,25 @@ a.light-color:hover {
 a[href^="mailto"] {
 	text-transform: none !important;
 }
+.link:after {
+	font-family: "Glyphicons Halflings";
+	content: "\e095";
+	font-size: 23px;
+	vertical-align: middle;
+	margin-left: 12px;
+}
+.text-right .link:after,
+.link.text-right:after {
+	display: none;
+}
+.text-right .link:before,
+.link.text-right:before {
+	font-family: "Glyphicons Halflings";
+	content: "\e095";
+	font-size: 23px;
+	vertical-align: middle;
+	margin-right: 12px;
+}
 
 hr {
 	width: 100%;
