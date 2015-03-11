@@ -1,12 +1,12 @@
 Labster Jekyll theme
 =========================
 
-Jekyll theme based for labster dot com landing page
+Jekyll theme based for testing labster dot com landing pages. If approved, they move into Swig templates for CMS (Keystone / Webhook)
 
 ## How to use
  - Place a image in `/img/gallery/`
  - Create posts to display projects with naming convention:
-   - `2007-09-04-t4y-6.markdown` OR `2007-09-04-t4y-6.md`
+   - `2007-09-04-labster-6.markdown` OR `2007-09-04-labster-6.md`
  - Use the follow front matter as an example:
  
 ```txt
