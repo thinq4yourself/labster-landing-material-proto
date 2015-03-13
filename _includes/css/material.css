@@ -1652,7 +1652,7 @@ div.downloadable p {
 	position: relative;
 	width: 370px;
 	height: 683px;
-	background-image: url('../images/intro/nexus.png');
+	background-image: url('images/intro/nexus.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 52px 20px 0 21px; 
@@ -2387,12 +2387,14 @@ div.downloadable p {
 .offcanvas-nav .nav-link .scroll-nav {
 	display: inline-block;
 	margin-right: -5px;
+    width: 100%;
 }
 .offcanvas-nav .nav-link ul {
 	display: inline-block;
 	list-style: none;
 	padding: 0;
 	margin-left: 0;
+    width: 49%;
 }
 .offcanvas-nav .nav-link ul.pages a {
 	font-weight: 600;
@@ -5452,7 +5454,7 @@ a.icon-block {
 	position: relative;
 	width: 370px;
 	height: 192px;
-	background-image: url('../images/footer/tablet.png');
+	background-image: url('images/footer/tablet.png');
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: cover;
@@ -5466,7 +5468,7 @@ a.icon-block {
 	content: "";
 	width: 370px;
 	height: 192px;
-	background-image: url('../images/footer/tablet-reflection.png');
+	background-image: url('images/footer/tablet-reflection.png');
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: cover;
@@ -5483,9 +5485,7 @@ a.icon-block {
 	display: inline-block;
 	margin: 0 0 20px 15px;
 }
-.footer-nav ul li:first-child {
-	display: block;
-}
+
 .footer-nav ul li a {
 	font-size: 14px;
 }

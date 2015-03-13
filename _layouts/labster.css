@@ -6,6 +6,8 @@
 
 {% include css/vendor/jquery.mCustomScrollbar.css %}
 
+{% include css/vendor/bootstrap.popover.min.css %}
+
 {% include css/vendor/bootstrap-tour.min.css %}
 
 {% include css/vendor/waves.css %}

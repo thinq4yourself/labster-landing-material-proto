@@ -1,8 +1,15 @@
-    <footer class="footer fw-bg top-inner-shadow padding-top-3x">
+    <footer class="footer fw-bg top-inner-shadow padding-top-3x padding-bottom-2x">
       <div class="container space-top">
-        <!-- Footer Head -->
-          <div class="footer-head-wrap">
-          <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="footer-head waves-effect waves-button waves-float">
+
+        
+        <div class="body padding-top-2x">
+          <!-- Copyright -->
+          <div class="column copyright">
+            <p class="editable" data-type="textarea" data-pk="8" data-url="" data-title="Title" data-name="">Copyright 20{{ site.time | date: '%y' }} | {{ site.footer.copyright }}</p>
+          </div>
+          <!-- Gadget (Middle Column) -->
+          <div class="column hidden-sm hidden-xs">
+                      <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="footer-head waves-effect waves-button waves-float">
             <div class="logo">
               <img src="images/labster-icon-large.png" alt="{{ site.title }}">
             </div>
@@ -14,18 +21,7 @@
               </div>
             </div>
           </a>
-        </div>
-        
-        <div class="body padding-top-2x">
-          <!-- Copyright -->
-          <div class="column copyright">
-            <p class="editable" data-type="textarea" data-pk="8" data-url="" data-title="Title" data-name="">Copyright 20{{ site.time | date: '%y' }} | {{ site.footer.copyright }}</p>
-          </div>
-          <!-- Gadget (Middle Column) -->
-          <div class="column hidden-sm hidden-xs">
-            <div class="gadget">
-              <img src="images/footer/room.jpg" alt="Screen">
-            </div>
+
           </div>
           <nav class="column footer-nav">
             <ul>
