@@ -35,6 +35,12 @@
             <form class="tab-pane transition scale fade" id="signup-form">
               <h3 class="modal-title">Sign Up</h3>
               <div class="form-control space-top-2x">
+                <input type="text" name="su-name" id="su-name" required>
+                <label for="su-name">Name</label>
+                <span class="error-label"></span>
+                <span class="valid-label"></span>
+              </div>
+              <div class="form-control">
                 <input type="email" name="su-email" id="su-email" required>
                 <label for="su-email">Email</label>
                 <span class="error-label"></span>
@@ -43,12 +49,6 @@
               <div class="form-control">
                 <input type="password" name="su-password" id="su-password" required>
                 <label for="su-password">Password</label>
-                <span class="error-label"></span>
-                <span class="valid-label"></span>
-              </div>
-              <div class="form-control">
-                <input type="password" name="su-password-repeat" id="su-password-repeat" required>
-                <label for="su-password-repeat">Repeat password</label>
                 <span class="error-label"></span>
                 <span class="valid-label"></span>
               </div>

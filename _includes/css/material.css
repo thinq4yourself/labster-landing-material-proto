@@ -590,7 +590,7 @@ ol {
 }
 .social-buttons a {
 	display: inline-block;
-	font-size: 18px;
+	font-size: 25px;
 	text-decoration: none;
 	margin: 5px 25px 10px 0;
 	opacity: 1;
@@ -5638,3 +5638,255 @@ a.icon-block {
 }
 .editable-input .form-control {color: #000;}
 .editable-container {z-index: 2001;}
+
+/*
+* Browser window
+*/
+.browser {
+  margin-bottom: 20px; }
+  .browser img {
+    width: 100%; }
+  .browser .bar {
+    width: 100%;
+    height: 42px;
+    position: relative;
+    background-color: #eff1f4;
+    border-radius: 5px 5px 0 0; }
+    .browser .bar .addressbar {
+      background-color: #fff;
+      height: 26px;
+      top: 8px;
+      width: 84%;
+      position: absolute;
+      margin-left: 3%;
+      border-radius: 5px; }
+      .browser .bar .addressbar .search {
+        width: 30%;
+        height: 10px;
+        top: 8px;
+        position: absolute;
+        background-color: #d8d6d7;
+        margin-left: 2%;
+        font-size: 10px;
+        line-height: 10px;
+        color: #ccc; }
+        .browser .bar .addressbar .search.text {
+          background-color: transparent; }
+          .browser .bar .addressbar .search.text a {
+            color: #ded6d7; }
+    .browser .bar .settings:before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      right: 3%;
+      width: 7%;
+      height: 20px;
+      border-top: 12px double #d8d6d7;
+      border-bottom: 4px solid #d8d6d7; }
+    .browser .bar .settings {
+      width: 10%; }
+  .browser .content {
+    border: solid 1px #eff1f4;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden; }
+    .browser .content.empty {
+      width: 100%;
+      height: 210px; }
+  .browser.dark .bar {
+    background-color: #d8d6d7; }
+    .browser.dark .bar .addressbar {
+      background-color: #fff; }
+      .browser.dark .bar .addressbar .search {
+        background-color: #d8d6d7;
+        color: #a6a6a6; }
+        .browser.dark .bar .addressbar .search.text {
+          background-color: transparent; }
+          .browser.dark .bar .addressbar .search.text a {
+            color: #a6a6a6; }
+  .browser.dark .settings:before {
+    border-color: #a6a6a6; }
+  .browser.dark .content {
+    border-color: #d8d6d7; }
+  .browser.dark.texture .addressbar {
+    box-shadow: rgba(255, 255, 255, 0.8) 0 1px 0, inset rgba(0, 0, 0, 0.3) 0 1px 0; }
+  .browser.texture {
+    /*drop shadow */ }
+    .browser.texture .content,
+    .browser.texture .bar {
+      -webkit-box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.2);
+      -moz-box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.2);
+      box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.2); }
+    .browser.texture .addressbar {
+      box-shadow: rgba(255, 255, 255, 0.05) 0 1px 0, inset rgba(0, 0, 0, 0.1) 0 1px 0; }
+    .browser.texture .search {
+      box-shadow: rgba(255, 255, 255, 0.05) 0 1px 0, inset rgba(0, 0, 0, 0.1) 0 1px 0; }
+      .browser.texture .search.text {
+        box-shadow: none; }
+  .browser.outline.dark .bar {
+    background-color: #fff;
+    border: #a6a6a6 solid 2px;
+    width: 99%; }
+    .browser.outline.dark .bar .addressbar {
+      border: #a6a6a6 solid 2px;
+      height: 22px; }
+      .browser.outline.dark .bar .addressbar .search {
+        background-color: transparent; }
+    .browser.outline.dark .bar .settings:before {
+      border-top: 12px double #a6a6a6;
+      border-bottom: 4px solid #a6a6a6; }
+  .browser.outline.dark .content {
+    border: #a6a6a6 solid 2px;
+    border-top: none;
+    width: 99%; }
+  .browser.outline .bar {
+    background-color: #fff;
+    border: #eff1f4 solid 2px;
+    width: 99%; }
+    .browser.outline .bar .addressbar {
+      border: #eff1f4 solid 2px;
+      height: 22px; }
+      .browser.outline .bar .addressbar .search {
+        background-color: transparent; }
+    .browser.outline .bar .settings:before {
+      border-top: 12px double #eff1f4;
+      border-bottom: 4px solid #eff1f4;
+      margin-top: -2px; }
+  .browser.outline .content {
+    border: #eff1f4 solid 2px;
+    border-top: none;
+    width: 99%; }
+
+/* Settings specific to spans the browser might appear in*/
+@media screen and (min-width: 600px) {
+  .col-xs-12 .browser .bar .addressbar,
+  .col-xs-11 .browser .bar .addressbar,
+  .col-xs-10 .browser .bar .addressbar,
+  .col-xs-9 .browser .bar .addressbar,
+  .col-xs-8 .browser .bar .addressbar,
+  .col-sm-12 .browser .bar .addressbar,
+  .col-sm-11 .browser .bar .addressbar,
+  .col-sm-10 .browser .bar .addressbar,
+  .col-sm-9 .browser .bar .addressbar,
+  .col-sm-8 .browser .bar .addressbar {
+    width: 88%;
+    margin-left: 2%; }
+  .col-xs-12 .browser .bar .settings:before,
+  .col-xs-11 .browser .bar .settings:before,
+  .col-xs-10 .browser .bar .settings:before,
+  .col-xs-9 .browser .bar .settings:before,
+  .col-xs-8 .browser .bar .settings:before,
+  .col-sm-12 .browser .bar .settings:before,
+  .col-sm-11 .browser .bar .settings:before,
+  .col-sm-10 .browser .bar .settings:before,
+  .col-sm-9 .browser .bar .settings:before,
+  .col-sm-8 .browser .bar .settings:before {
+    right: 2%;
+    width: 6%; } }
+@media screen and (min-width: 768px) {
+  .col-xs-12 .browser .bar .addressbar,
+  .col-xs-11 .browser .bar .addressbar,
+  .col-xs-10 .browser .bar .addressbar,
+  .col-sm-12 .browser .bar .addressbar,
+  .col-sm-11 .browser .bar .addressbar,
+  .col-sm-10 .browser .bar .addressbar {
+    width: 91%;
+    margin-left: 1%; }
+  .col-xs-12 .browser .bar .settings:before,
+  .col-xs-11 .browser .bar .settings:before,
+  .col-xs-10 .browser .bar .settings:before,
+  .col-sm-12 .browser .bar .settings:before,
+  .col-sm-11 .browser .bar .settings:before,
+  .col-sm-10 .browser .bar .settings:before {
+    right: 1%;
+    width: 6%; } }
+@media screen and (min-width: 992px) {
+  .col-xs-12 .browser .bar .addressbar,
+  .col-xs-11 .browser .bar .addressbar,
+  .col-xs-10 .browser .bar .addressbar,
+  .col-xs-9 .browser .bar .addressbar,
+  .col-xs-8 .browser .bar .addressbar,
+  .col-md-12 .browser .bar .addressbar,
+  .col-md-11 .browser .bar .addressbar,
+  .col-md-10 .browser .bar .addressbar,
+  .col-md-9 .browser .bar .addressbar,
+  .col-md-8 .browser .bar .addressbar {
+    width: 93%;
+    margin-left: 1%; }
+  .col-xs-12 .browser .bar .settings:before,
+  .col-xs-11 .browser .bar .settings:before,
+  .col-xs-10 .browser .bar .settings:before,
+  .col-xs-9 .browser .bar .settings:before,
+  .col-xs-8 .browser .bar .settings:before,
+  .col-md-12 .browser .bar .settings:before,
+  .col-md-11 .browser .bar .settings:before,
+  .col-md-10 .browser .bar .settings:before,
+  .col-md-9 .browser .bar .settings:before,
+  .col-md-8 .browser .bar .settings:before {
+    right: 1%;
+    width: 4%; }
+
+  .col-xs-5 .browser .bar .addressbar,
+  .col-xs-4 .browser .bar .addressbar,
+  .col-xs-3 .browser .bar .addressbar,
+  .col-xs-2 .browser .bar .addressbar,
+  .col-xs-1 .browser .bar .addressbar,
+  .col-md-5 .browser .bar .addressbar,
+  .col-md-4 .browser .bar .addressbar,
+  .col-md-3 .browser .bar .addressbar,
+  .col-md-2 .browser .bar .addressbar,
+  .col-md-1 .browser .bar .addressbar {
+    width: 84%;
+    margin-left: 3%; }
+  .col-xs-5 .browser .bar .settings:before,
+  .col-xs-4 .browser .bar .settings:before,
+  .col-xs-3 .browser .bar .settings:before,
+  .col-xs-2 .browser .bar .settings:before,
+  .col-xs-1 .browser .bar .settings:before,
+  .col-md-5 .browser .bar .settings:before,
+  .col-md-4 .browser .bar .settings:before,
+  .col-md-3 .browser .bar .settings:before,
+  .col-md-2 .browser .bar .settings:before,
+  .col-md-1 .browser .bar .settings:before {
+    right: 3%;
+    width: 7%; } }
+@media screen and (min-width: 1200px) {
+  .col-xs-12 .browser .bar .addressbar,
+  .col-xs-11 .browser .bar .addressbar,
+  .col-md-12 .browser .bar .addressbar,
+  .col-md-11 .browser .bar .addressbar,
+  .col-lg-12 .browser .bar .addressbar,
+  .col-lg-11 .browser .bar .addressbar {
+    width: 93%;
+    margin-left: 1%; }
+  .col-xs-12 .browser .bar .settings:before,
+  .col-xs-11 .browser .bar .settings:before,
+  .col-md-12 .browser .bar .settings:before,
+  .col-md-11 .browser .bar .settings:before,
+  .col-lg-12 .browser .bar .settings:before,
+  .col-lg-11 .browser .bar .settings:before {
+    right: 1%;
+    width: 4%; }
+
+  .col-xs-7 .browser .bar .addressbar,
+  .col-xs-6 .browser .bar .addressbar,
+  .col-xs-5
+  .col-md-7 .browser .bar .addressbar,
+  .col-md-6 .browser .bar .addressbar,
+  .col-md-5
+  .col-lg-7 .browser .bar .addressbar,
+  .col-lg-6 .browser .bar .addressbar,
+  .col-lg-5 .browser .bar .addressbar {
+    width: 92%;
+    margin-left: 1%; }
+  .col-xs-7 .browser .bar .settings:before,
+  .col-xs-6 .browser .bar .settings:before,
+  .col-xs-5
+  .col-md-7 .browser .bar .settings:before,
+  .col-md-6 .browser .bar .settings:before,
+  .col-md-5
+  .col-lg-7 .browser .bar .settings:before,
+  .col-lg-6 .browser .bar .settings:before,
+  .col-lg-5 .browser .bar .settings:before {
+    right: 1%;
+    width: 5%; } }
+/* end specific browser settings */

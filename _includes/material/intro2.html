@@ -24,15 +24,59 @@
           <!-- Middle Column-->
           <div class="column c-middle">
             <h1 class="logo">
-              <img src="images/logo-big.png" alt="Labster">
+              <span class="glyphicon glyphicon-heart-empty" aria-hidden="true" style="font-size:4em;"></span>
               <img src="images/labster-logo.png" alt="{{ site.title }}" class="long">
               <span class="editable" data-type="text" data-pk="8" data-url="" data-title="Title" data-name="">{{ site.pitch }}</span>
             </h1>
-            <div class="phone">
-              <a href="https://www.youtube-nocookie.com/embed/oairUMkieak?rel=0&amp;controls=0&amp;showinfo=0" class="video-popup waves-effect waves-dark">
-                  <img src="images/intro/screen.png" alt="">
-                </a>
-            </div>
+            
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="browser dark">
+	<div class="bar">
+		<div class="home"></div>
+		<div class="addressbar">
+		<div class="search text"><a href="#" class="waves-effect waves-primary" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-up">http://labster.com</a></div>
+	</div>
+	<div class="settings"></div>
+	</div>
+	<div class="content">
+              
+        <form id="intro-form" novalidate="novalidate" _lpchecked="1" style="padding:20px;">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-control">
+                    <input type="text" name="fd_name" id="fd_name" required="" aria-required="true" style="color:#fff;">
+                    <label for="fd_name">Name</label>
+                    <span class="error-label"></span>
+                    <span class="valid-label"></span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-control">
+                    <input type="email" name="fd_email" id="fd_email" required="" aria-required="true" style="color:#fff;">
+                    <label for="fd_email">Email</label>
+                    <span class="error-label"></span>
+                    <span class="valid-label"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row space-top">
+                <div class="col-sm-7">
+                  <label class="checkbox space-top">
+                    <div class="icheckbox"><input type="checkbox" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div> Receive Special Offers
+                  </label>
+                </div>
+                <div class="col-sm-5">
+                      <button type="submit" class="btn btn-block btn-sm btn-primary btn-float waves-effect waves-light">Get Started</button>
+                </div>
+              </div>
+            </form>
+        
+	</div>
+</div> <!-- // end browser -->
+			</div>        
+        
+        
+        
           </div>
 
           <!-- Right Column-->
@@ -103,13 +147,11 @@
             </div>
             <!-- Download Button -->
             <div class="download">
-              <a href="https://www.youtube-nocookie.com/embed/oairUMkieak?rel=0&amp;controls=0&amp;showinfo=0" class="video-popup btn btn-default btn-float waves-effect waves-dark">
-                <i class="flaticon-play107" style="font-size: 2em;"></i>
-                Watch The Trailer
-              </a>
-
+              <h4 class="editable" data-type="text" data-pk="8" data-url="" data-title="Title" data-name="">
+                  <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> 
+                  Enter your <strong>name</strong> & <strong>email</strong> to get started right away with your free trial.
+              </h4>
             </div>
           </div>
         </div>
       </div>
-    </section>

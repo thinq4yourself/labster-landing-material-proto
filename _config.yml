@@ -22,6 +22,7 @@ collections:
 theme: material # labsterx & material are available
 title: Labster
 tagline: Empowering scientists to change the world.
+pitch: "Award Winning <strong>Virtual Laboratories</strong> for <strong>High Schools</strong>, <strong>Colleges</strong> and <strong>Universities</strong>"
 email: hello@labster.com
 description: "Empowering scientists to change the world."
 # Pssst..we edit the above line in _config.yml. It will appear in our document head meta (for Google search results) 
