@@ -1,3 +1,12 @@
+// get the video going right away
+$("#wallpapered").wallpaper({
+	source: {
+		hoverPlay: true,
+        poster: "images/intro/lab-3d.jpg",
+		video: "//www.youtube.com/embed/oairUMkieak?rel=0&amp;controls=0&amp;showinfo=0"
+	}
+});
+
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('.page-scroll a').bind('click', function(event) {

@@ -1,0 +1,31 @@
+{
+  "name": "Wallpaper",
+  "version": "3.1.19",
+  "description": "A jQuery plugin for smooth-scaling image and video backgrounds. Part of the Formstone Library.",
+  "author": {
+    "name": "Ben Plum",
+    "email": "mr@benplum.com",
+    "url": "http://www.benplum.com"
+  },
+  "license": "MIT",
+  "homepage": "http://formstone.it/wallpaper/",
+  "main": [
+    "jquery.fs.wallpaper.js",
+    "jquery.fs.wallpaper.css"
+  ],
+  "ignore": [
+    "*.jquery.json",
+    "Gruntfile.js",
+    "src/"
+  ],
+  "_release": "3.1.19",
+  "_resolution": {
+    "type": "version",
+    "tag": "3.1.19",
+    "commit": "a4abdec568d8fa19f6262a813b9ab7306c0bb468"
+  },
+  "_source": "git://github.com/benplum/Wallpaper.git",
+  "_target": "~3.1.19",
+  "_originalSource": "Wallpaper",
+  "_direct": true
+}
