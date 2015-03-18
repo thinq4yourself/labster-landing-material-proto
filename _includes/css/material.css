@@ -497,13 +497,13 @@ ol {
 	background-color: #96cb4b;
 }
 .badge.badge-info .icon {
-	background-color: #4b62ff;
+	background-color: #16A085;
 }
 .badge.badge-warning .icon {
-	background-color: #ff6d00;
+	background-color: #E67E22;
 }
 .badge.badge-danger .icon {
-	background-color: #e91e63;
+	background-color: #E74C3C;
 }
 .badge.badge-reverse {
 	text-align: right;
@@ -562,13 +562,16 @@ ol {
 	color: #96cb4b !important;
 }
 .text-info {
-	color: #4b62ff !important;
+	color: #16A085 !important;
 }
 .text-warning {
-	color: #ff6d00 !important;
+	color: #E67E22 !important;
 }
 .text-danger {
-	color: #e91e63 !important;
+	color: #E74C3C !important;
+}
+.text-inverse {
+	color: #34495E !important;
 }
 .light-color .text-muted,
 .light-color .text-gray,
@@ -810,14 +813,14 @@ label.error {
 }
 .form-control input.error,
 .form-control textarea.error {
-	color: #e91e63;
-	border-color: #e91e63;
-	-webkit-box-shadow: 0 1px 0 0 #e91e63;
-	box-shadow: 0 1px 0 0 #e91e63;
+	color: #E74C3C;
+	border-color: #E74C3C;
+	-webkit-box-shadow: 0 1px 0 0 #E74C3C;
+	box-shadow: 0 1px 0 0 #E74C3C;
 }
 .form-control.active input.error ~ label,
 .form-control.active textarea.error ~ label {
-	color: #e91e63;
+	color: #E74C3C;
 }
 .form-control input.valid,
 .form-control textarea.valid {
@@ -852,7 +855,7 @@ label.error {
 	font-family: "Flaticon";
 }
 .error-label:before {
-	color: #e91e63;
+	color: #E74C3C;
 	content: "!";
 	padding-right: 10px;
 }
@@ -882,7 +885,7 @@ label.error {
 	opacity: 1;
 }
 .response-holder.error {
-	color: #e91e63; 
+	color: #E74C3C; 
 }
 .response-holder.success {
 	color: #96cb4b;
@@ -1132,14 +1135,19 @@ label.hover {
 	background-color: #96cb4b;
 }
 .btn-info {
-	background-color: #4b62ff;
+	background-color: #16A085;
 }
 .btn-warning {
-	background-color: #ff6d00;
+	background-color: #E67E22;
 }
 .btn-danger {
-	background-color: #e91e63;
+	background-color: #E74C3C;
 }
+.btn-inverse {
+	background-color: #34495E;
+    color: #fff;
+}
+
 
 /* Flat Buttons */
 .btn-flat {
@@ -1168,15 +1176,15 @@ label.hover {
 }
 .btn-flat.btn-info,
 .btn-flat.btn-info:hover {
-	color: #4b62ff !important;
+	color: #16A085 !important;
 }
 .btn-flat.btn-warning,
 .btn-flat.btn-warning:hover {
-	color: #ff6d00 !important;
+	color: #E67E22 !important;
 }
 .btn-flat.btn-danger,
 .btn-flat.btn-danger:hover {
-	color: #e91e63 !important;
+	color: #E74C3C !important;
 }
 /* Ghost Buttons */
 .btn-ghost {
@@ -1680,7 +1688,6 @@ div.downloadable p {
 .scroll-more {
 	display: inline-block;
 	height: 36px;
-	color: #fff;
 	text-transform: none;
 	text-decoration: none;
 	font-size: 14px;
@@ -1689,7 +1696,6 @@ div.downloadable p {
 }
 .scroll-more:hover,
 .scroll-more:focus {
-	color: #fff;
 	text-decoration: none;
 }
 .scroll-more span {
@@ -1703,7 +1709,7 @@ div.downloadable p {
 	width: 36px;
 	height: 36px;
 	vertical-align: middle;
-	border: 1px solid #fff;
+	border: 1px solid;
 	border-radius: 50%;
 	margin-right: 8px;
 	padding: 8px 0 0 12px;
@@ -1713,7 +1719,7 @@ div.downloadable p {
 	width: 10px;
 	height: 18px;
 	content: "";
-	border: 1px solid #fff;
+	border: 1px solid;
 	border-radius: 12px;
 }
 .scroll-more .icon:after {
@@ -1727,6 +1733,28 @@ div.downloadable p {
 	background-color: #fff;
 	-webkit-animation: scroll 1.2s infinite;
 					animation: scroll 1.2s infinite;
+}
+.scroll-more.text-primary .icon:after {
+    background-color: #008fed;
+}
+.scroll-more.text-success .icon:after {
+	background-color: #96cb4b;
+}
+.scroll-more.text-info .icon:after {
+	background-color: #16A085;
+}
+.scroll-more.text-warning .icon:after {
+	background-color: #E67E22;
+}
+.scroll-more.text-danger .icon:after {
+	background-color: #E74C3C;
+}
+.scroll-more.text-gray .icon:after {
+    background-color: #666;
+}
+
+.scroll-more.text-inverse .icon:after {
+    background-color: #34495E;
 }
 @-webkit-keyframes scroll {
     0% { opacity: .8; -webkit-transform: translateY(0); }
@@ -2659,7 +2687,7 @@ div.downloadable p {
 }
 .fw-bg.overlay.gradient-green-blue:before,
 .fw-bg.partial-overlay.gradient-green-blue:before {
-	opacity: .67;
+	opacity: .35;
 	background: rgba(0,255,128,1);
 	background: -moz-linear-gradient(bottom, rgba(0,184,214,1) 0%, rgba(150,203,75,1) 100%);
 	background: -webkit-gradient(left bottom, left top, color-stop(0%, rgba(0,184,214,1)), color-stop(100%, rgba(150,203,75,1)));
@@ -3042,7 +3070,6 @@ div.downloadable p {
 	margin: 3px 12px;
 }
 .feature-tabs .nav-tabs > li > a > i {
-	color: #96cb4b;
 	font-size: 50px;
 }
 .feature-tabs .nav-tabs > li > a:after {
@@ -3437,13 +3464,20 @@ a.icon-block {
 	color: #96cb4b;
 }
 .icon-info i {
-	color: #4b62ff;
+	color: #16A085;
 }
 .icon-warning i {
-	color: #ff6d00;
+	color: #E67E22;
 }
 .icon-danger i {
-	color: #e91e63;
+	color: #E74C3C;
+}
+.icon-gray i {
+    color: #666;
+}
+
+.icon-inverse i {
+    color: #34495E;
 }
 
 /** 16.APP GALLERY
@@ -4351,13 +4385,17 @@ a.icon-block {
 	background-color: #96cb4b;
 }
 .pricing-plan.pricing-plan-info {
-	background-color: #4b62ff;
+	background-color: #16A085;
 }
 .pricing-plan.pricing-plan-warning {
-	background-color: #ff6d00;
+	background-color: #E67E22;
 }
 .pricing-plan.pricing-plan-danger {
-	background-color: #e91e63;
+	background-color: #E74C3C;
+}
+
+.pricing-plan.pricing-plan-inverse {
+    background-color: #34495E;
 }
 .pricing-plan.pricing-plan-primary,
 .pricing-plan.pricing-plan-success,
@@ -4760,13 +4798,16 @@ a.icon-block {
 	background-color: #96cb4b;
 }
 .featured-post.bg-info {
-	background-color: #4b62ff;
+	background-color: #16A085;
 }
 .featured-post.bg-warning {
-	background-color: #ff6d00;
+	background-color: #E67E22;
 }
 .featured-post.bg-danger {
-	background-color: #e91e63;
+	background-color: #E74C3C;
+}
+.featured-post.bg-inverse {
+	background-color: #34495E;
 }
 .featured-post .arrow {
 	height: 0px;
@@ -5181,13 +5222,13 @@ a.icon-block {
 	background-color: #96cb4b;
 }
 .bar-charts .chart.chart-info .bar {
-	background-color: #4b62ff;
+	background-color: #16A085;
 }
 .bar-charts .chart.chart-warning .bar {
-	background-color: #ff6d00;
+	background-color: #E67E22;
 }
 .bar-charts .chart.chart-danger .bar {
-	background-color: #e91e63;
+	background-color: #E74C3C;
 }
 .bar-charts .chart h3 {
 	font-weight: 300;
@@ -5687,7 +5728,6 @@ a.icon-block {
       margin-left: 3%;
       border-radius: 5px; }
       .browser .bar .addressbar .search {
-        width: 30%;
         height: 10px;
         top: 8px;
         position: absolute;

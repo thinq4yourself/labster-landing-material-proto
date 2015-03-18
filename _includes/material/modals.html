@@ -27,7 +27,7 @@
                             <button type="submit" class="btn btn-float btn-primary waves-effect waves-primary">Sign In</button>
                         </div>
                         <!-- Switching forms (Fake nav tab) -->
-                        <div class="form-switch pull-left"><a class="btn btn-flat btn-primary waves-effect waves-primary" href="#form-1">Sign Up</a>
+                        <div class="form-switch pull-left"><a class="btn btn-flat btn-primary waves-effect waves-primary" data-toggle="modal" data-target="#signup-page" data-modal-form="sign-up" data-dismiss="modal">Sign Up</a>
                         </div>
                     </div>
                 </form>
@@ -48,7 +48,7 @@
             <div class="tab-content">
                 <!-- Sign up form -->
                 <form class="tab-pane transition scale fade" id="signup-form">
-                    <div class="row">
+                    <div class="row text-muted">
                         <div class="col-sm-6">
                             <img src="https://cdn3.iconfinder.com/data/icons/funky/136/Profile-256.png">
                         </div>
@@ -114,7 +114,7 @@
             <div class="tab-content text-muted">
                 <div class="row">
                     <div class="col-sm-6">
-                        <img src="https://cdn0.iconfinder.com/data/icons/apple-device/128/device-53-128.png">
+                        <img src="https://cdn0.iconfinder.com/data/icons/kameleon-free-pack-rounded/110/Phone-Booth-128.png">
                     </div>
                     <div class="col-sm-6">
                         <h3 class="editable editable-click" data-type="text" data-pk="8" data-url="" data-title="Title" data-name="">Let's Get Started</h3>
@@ -147,11 +147,9 @@
                     </label>
                     <div class="clearfix modal-buttons">
                         <div class="pull-right">
-                            <button type="button" class="btn btn-float btn-default waves-effect" data-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-float btn-success waves-effect waves-success">Send Call Request</button>
-                        </div>
-                        <!-- Schedule a Call -->
-                        <div class="pull-left"><a class="btn btn-flat btn-success waves-effect waves-success" href="https://ga.youcanbook.me/" target="_blank">Schedule A Call Instead</a>
+                            <a class="btn btn-flat btn-warning waves-effect waves-warning" href="https://ga.youcanbook.me/" target="_blank">Schedule A Call</a>
+                            <button type="button" class="btn btn-float btn-default waves-effect waves-dark" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-float btn-warning waves-effect waves-dark">Send Call Request</button>
                         </div>
                     </div>
                 </form>
