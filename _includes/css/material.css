@@ -1,8 +1,8 @@
 /*
- * Labster Material HTML5 Theme v1
+ * Labster Material HTML5 Framework v1
  */
 
-/** TABLE OF CONTENTS **/
+/** COMPONENTS **/
 
 /**
 		01. CSS Reset
@@ -22,7 +22,7 @@
 		15. Icon Blocks
 		16. App Gallery
 		17. Gallery
-		18. Download Items (Press)
+		18. Press
 		19. News
 		20. Scroller
 		21. Split Block
@@ -540,7 +540,7 @@ ol {
 	color: #fff !important;
 }
 .light-color a {
-	color: #fff !important;
+	color: #fff;
 	opacity: 1;
 	font-weight: 300;
 }
@@ -1972,7 +1972,6 @@ div.downloadable p {
 	position: absolute;
 	z-index: 100;
 	width: 100%;
-	height: 144px;
 	padding: 0;
     margin: 0;
 	-webkit-backface-visibility: hidden;
@@ -1996,9 +1995,9 @@ div.downloadable p {
 	top: 0;
 }
 .navbar .container {
-	background-color: #000; /* og: #008fed */
+	background-color: #1D191A; /* og: #008fed */
     width: 100%;
-	height: 96px;
+	height: 76px;
 	padding: 0 40px;
 	-webkit-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.25);
 	-moz-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.25);
@@ -2016,7 +2015,7 @@ div.downloadable p {
 	display: inline-block;
 	height: 48px;
 	font-size: 18px;
-	line-height: 94px;
+	line-height: 72px;
 	font-weight: 300;
 	color: #fff;
 	text-transform: none;
@@ -2042,7 +2041,7 @@ div.downloadable p {
 .navbar .toolbar {
 	float: right;
 	text-align: right;
-	padding-top: 16px;
+	padding-top: 3px;
 }
 .navbar .toolbar a {
 	font-size: 14px;
@@ -2658,6 +2657,18 @@ div.downloadable p {
 	background: linear-gradient(to bottom, rgba(0,184,214,1) 0%, rgba(150,203,75,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b8d6', endColorstr='#96cb4b', GradientType=0 );
 }
+.fw-bg.overlay.gradient-green-blue:before,
+.fw-bg.partial-overlay.gradient-green-blue:before {
+	opacity: .67;
+	background: rgba(0,255,128,1);
+	background: -moz-linear-gradient(bottom, rgba(0,184,214,1) 0%, rgba(150,203,75,1) 100%);
+	background: -webkit-gradient(left bottom, left top, color-stop(0%, rgba(0,184,214,1)), color-stop(100%, rgba(150,203,75,1)));
+	background: -webkit-linear-gradient(bottom, rgba(0,184,214,1) 0%, rgba(150,203,75,1) 100%);
+	background: -o-linear-gradient(bottom, rgba(0,184,214,1) 0%, rgba(150,203,75,1) 100%);
+	background: -ms-linear-gradient(bottom, rgba(0,184,214,1) 0%, rgba(150,203,75,1) 100%);
+	background: linear-gradient(to top, rgba(0,184,214,1) 0%, rgba(150,203,75,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96cb4b', endColorstr='#008fed', GradientType=0 );
+}
 .fw-bg.overlay.gradient-red-blue:before,
 .fw-bg.partial-overlay.gradient-red-blue:before {
 	opacity: .8;
@@ -3181,7 +3192,7 @@ div.downloadable p {
 	width: 100%;
 	max-width: 580px;
 	padding: 40px 0 30px 0;
-	margin: 140px auto 50px auto;
+	margin: 90px auto 50px auto;
 	background-color: #fff;
 	-webkit-box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.4);
 	-moz-box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.4);
@@ -3194,6 +3205,7 @@ div.downloadable p {
 }
 .modal-backdrop {
 	opacity: 0 !important;
+    background-color: #fff;
 }
 .modal-title {
 	font-size: 24px;
@@ -3418,6 +3430,21 @@ a.icon-block {
 	}
 }
 
+.icon-primary i {
+	color: #008fed;
+}
+.icon-success i {
+	color: #96cb4b;
+}
+.icon-info i {
+	color: #4b62ff;
+}
+.icon-warning i {
+	color: #ff6d00;
+}
+.icon-danger i {
+	color: #e91e63;
+}
 
 /** 16.APP GALLERY
 **********************************/
@@ -3882,7 +3909,7 @@ a.icon-block {
 **********************************/
 
 .video-block {
-	padding: 150px 0;
+	padding: 110px 0;
 	text-align: center;
 }
 .video-block a {
@@ -3901,7 +3928,7 @@ a.icon-block {
 }
 .video-block a > i {
 	display: block;
-	font-size: 54px;
+	font-size: 154px;
 	margin: 0 auto 22px auto;
 }
 @media screen and (max-width: 768px) {
@@ -3978,8 +4005,7 @@ a.icon-block {
 }
 .press-review img {
 	display: block;
-	max-width: 90px;
-	margin: 0 auto 30px auto;
+	margin: 0 auto 0 auto;
 }
 .press-review h3 {
 	margin-bottom: 24px;
@@ -5586,7 +5612,7 @@ a.icon-block {
 }
 
 
-/** 37.COMPONENTS DEMO STYLES
+/** 37.COMPONENT STYLES
 *****************************/
 
 .grid-demo figure {
@@ -5733,7 +5759,7 @@ a.icon-block {
         background-color: transparent; }
     .browser.outline.dark .bar .settings:before {
       border-top: 12px double #a6a6a6;
-      border-bottom: 4px solid #a6a6a6; }
+      border-bottom: 4px solid #E74C3C; }
   .browser.outline.dark .content {
     border: #a6a6a6 solid 2px;
     border-top: none;
@@ -5749,7 +5775,7 @@ a.icon-block {
         background-color: transparent; }
     .browser.outline .bar .settings:before {
       border-top: 12px double #eff1f4;
-      border-bottom: 4px solid #eff1f4;
+      border-bottom: 4px solid #E74C3C;
       margin-top: -2px; }
   .browser.outline .content {
     border: #eff1f4 solid 2px;
@@ -5890,3 +5916,6 @@ a.icon-block {
     right: 1%;
     width: 5%; } }
 /* end specific browser settings */
+
+
+/* WallPaper video plugin */

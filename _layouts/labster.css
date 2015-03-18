@@ -12,6 +12,8 @@
 
 {% include css/vendor/waves.css %}
 
+{% include css/vendor/jquery.fs.wallpaper.css %}
+
 {% include css/{{ site.theme }}.css %}
 
 {% include css/vendor/bootstrap-editable.css %}

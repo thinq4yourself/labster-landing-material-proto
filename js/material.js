@@ -1,12 +1,3 @@
-// get the video going right away
-$("#wallpapered").wallpaper({
-	source: {
-		hoverPlay: true,
-        poster: "images/intro/lab-3d.jpg",
-		video: "//www.youtube.com/embed/oairUMkieak?rel=0&amp;controls=0&amp;showinfo=0"
-	}
-});
-
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('.page-scroll a').bind('click', function(event) {
@@ -54,6 +45,14 @@ jQuery(document).ready(function($) {
 	var intro = $('.intro');
 	var content = $('.content-wrap');
 	var footer = $('.footer');
+
+    
+    /* This gets the video background bootstrapped
+     *******************************************************************************/
+    var vidOptions = { videoId: 'oairUMkieak', start: 0, mute: true, playButtonClass: 'tubular-play', pauseButtonClass: 'tubular-pause', muteButtonClass: 'tubular-mute', volumeUpClass: 'tubular-volume-up', volumeDownClass: 'tubular-volume-down'};
+	$('.wallpapered').tubular(vidOptions);
+
+
 
     /* This turns the page into an editable page *
 	********************************************************************************/
@@ -266,7 +265,10 @@ jQuery(document).ready(function($) {
 	});
 	$('[data-modal-form="sign-up"]').click(function(){
 		$('#form-1 a').click();
-	});
+	});	
+	$('[data-modal-form="sales"]').click(function(){
+		$('#form-3 a').click();
+	});	
 
 
 	/** Feature Tabs (Changing screens of Tablet and Phone)
@@ -306,8 +308,11 @@ jQuery(document).ready(function($) {
 	if($('#comment-form').length > 0) {
 		$('#comment-form').validate();
 	}
-	if($('#form-demo').length > 0) {
-		$('#form-demo').validate();
+	if($('#intro-demo').length > 0) {
+		$('#intro-demo').validate();
+    }
+	if($('#cta-demo').length > 0) {
+		$('#cta-demo').validate();
 	}
 
 	
@@ -842,7 +847,7 @@ function initialize() {
 }
 
 function codeAddress() {
-	var image = 'img/map-marker.png';
+	var image = 'images/map-marker.png';
 	var address = query;
 	geocoder.geocode( { 'address': address}, function(results, status) {
 		if (status == google.maps.GeocoderStatus.OK) {

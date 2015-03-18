@@ -1,75 +1,173 @@
 <div class="modal fade" id="signin-page">
-      <div class="modal-dialog">
+    <div class="modal-dialog">
         <div class="modal-form">
-          <div class="tab-content">
-            <!-- Sign in form -->
-            <form class="tab-pane transition scale fade in active" id="signin-form" autocomplete="off">
-              <h3 class="modal-title">Sign In</h3>
-              <div class="form-control space-top-2x">
-                <input type="email" name="si_email" id="si_email" readonly onfocus="$(this).removeAttr('readonly');" required>
-                <label for="si_email">Email</label>
-                <span class="error-label"></span>
-                <span class="valid-label"></span>
-              </div>
-              <div class="form-control">
-                <input type="password" name="si-password" id="si-password" readonly onfocus="$(this).removeAttr('readonly');" required>
-                <label for="si-password">Password</label>
-                <a class="helper-link" href="#">Forgot password?</a>
-                <span class="error-label"></span>
-                <span class="valid-label"></span>
-              </div>
-              <label class="checkbox space-top-2x">
-                <input type="checkbox"> Remember me
-              </label>
-              <div class="clearfix modal-buttons">
-                <div class="pull-right">
-                  <button type="button" class="btn btn-float btn-default waves-effect" data-dismiss="modal">Cancel</button>
-                  <button type="submit" class="btn btn-float btn-primary waves-effect waves-primary">Sign In</button>
-                </div>
-                <!-- Switching forms (Fake nav tab) -->
-                <div class="form-switch pull-left"><a class="btn btn-flat btn-primary waves-effect waves-primary" href="#form-1">Sign Up</a></div>
-              </div>
-            </form>
-
-            <!-- Sign up form -->
-            <form class="tab-pane transition scale fade" id="signup-form">
-              <h3 class="modal-title">Sign Up</h3>
-              <div class="form-control space-top-2x">
-                <input type="text" name="su-name" id="su-name" required>
-                <label for="su-name">Name</label>
-                <span class="error-label"></span>
-                <span class="valid-label"></span>
-              </div>
-              <div class="form-control">
-                <input type="email" name="su-email" id="su-email" required>
-                <label for="su-email">Email</label>
-                <span class="error-label"></span>
-                <span class="valid-label"></span>
-              </div>
-              <div class="form-control">
-                <input type="password" name="su-password" id="su-password" required>
-                <label for="su-password">Password</label>
-                <span class="error-label"></span>
-                <span class="valid-label"></span>
-              </div>
-              <label class="checkbox space-top-2x">
-                <input type="checkbox"> Subscribe to our newsletter
-              </label>
-              <div class="clearfix modal-buttons">
-                <div class="pull-right">
-                  <button type="button" class="btn btn-float btn-default waves-effect" data-dismiss="modal">Cancel</button>
-                  <button type="submit" class="btn btn-float btn-primary waves-effect waves-primary">Sign Up</button>
-                </div>
-                <!-- Switching forms (Fake nav tab) -->
-                <div class="form-switch pull-left"><a class="btn btn-flat btn-primary waves-effect waves-primary" href="#form-2">Sign In</a></div>
-              </div>
-            </form>
-          </div>
-          <!-- Hidden real nav tabs -->
-          <ul class="nav-tabs hidden">
-            <li id="form-1"><a href="#signup-form" data-toggle="tab">Sign up</a></li>
-            <li id="form-2"><a href="#signin-form" data-toggle="tab">Sign in</a></li>
-          </ul>
+            <div class="tab-content">
+                <!-- Sign in form -->
+                <form class="tab-pane transition scale fade in active" id="signin-form" autocomplete="off">
+                    <h3 class="modal-title">Sign In</h3>
+                    <div class="form-control space-top-2x">
+                        <input type="email" name="si_email" id="si_email" readonly onfocus="$(this).removeAttr('readonly');" required>
+                        <label for="si_email">Email</label>
+                        <span class="error-label"></span>
+                        <span class="valid-label"></span>
+                    </div>
+                    <div class="form-control">
+                        <input type="password" name="si-password" id="si-password" readonly onfocus="$(this).removeAttr('readonly');" required>
+                        <label for="si-password">Password</label>
+                        <a class="helper-link" href="#">Forgot password?</a>
+                        <span class="error-label"></span>
+                        <span class="valid-label"></span>
+                    </div>
+                    <label class="checkbox space-top-2x">
+                        <input type="checkbox">Remember me
+                    </label>
+                    <div class="clearfix modal-buttons">
+                        <div class="pull-right">
+                            <button type="button" class="btn btn-float btn-default waves-effect" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-float btn-primary waves-effect waves-primary">Sign In</button>
+                        </div>
+                        <!-- Switching forms (Fake nav tab) -->
+                        <div class="form-switch pull-left"><a class="btn btn-flat btn-primary waves-effect waves-primary" href="#form-1">Sign Up</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- Hidden real nav tabs -->
+            <ul class="nav-tabs hidden">
+                <li id="form-2"><a href="#signin-form" data-toggle="tab">Sign in</a>
+                </li>
+            </ul>
         </div>
-      </div><!-- /.modal-dialog -->
     </div>
+    <!-- /.modal-dialog -->
+</div>
+<div class="modal fade" id="signup-page">
+    <div class="gradient"></div>
+    <div class="modal-dialog" style="background-color: #1d354d;">
+        <div class="modal-form" style="max-width: 90%;">
+            <div class="tab-content">
+                <!-- Sign up form -->
+                <form class="tab-pane transition scale fade" id="signup-form">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="https://cdn3.iconfinder.com/data/icons/funky/136/Profile-256.png">
+                        </div>
+                        <div class="col-sm-6">
+                            <h3 class="editable editable-click" data-type="text" data-pk="8" data-url="" data-title="Title" data-name="">Let's Get Started</h3>
+                            <div class="text">
+                                <p class="editable editable-pre-wrapped editable-click" data-type="textarea" data-pk="8" data-url="" data-title="Title" data-name="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas harum a aperiam pariatur totam impedit, sint quibusdam minus deserunt labore ipsum commodo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-control">
+                                <input type="text" name="fd_name" id="fd_name2" required="" aria-required="true" style="color:#fff;">
+                                <label for="fd_name">Name</label>
+                                <span class="error-label"></span>
+                                <span class="valid-label"></span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-control">
+                                <input type="email" name="fd_email" id="fd_email2" required="" aria-required="true" style="color:#fff;">
+                                <label for="fd_email">Email</label>
+                                <span class="error-label"></span>
+                                <span class="valid-label"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row space-top">
+                        <div class="col-sm-7">
+                            <label class="checkbox space-top">
+                                <div class="icheckbox">
+                                    <input type="checkbox" style="position: absolute; opacity: 0;" checked><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins>
+                                </div>Receive Updates
+                            </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <button type="submit" class="btn btn-block btn-primary btn-float btn-app-store waves-effect waves-primary">
+                                <i class="flaticon-thumb54"></i> Get Started</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- Hidden real nav tabs -->
+            <ul class="nav-tabs hidden">
+                <li id="form-1"><a href="#signup-form" data-toggle="tab">Sign up</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+
+
+
+<!-- Sales call -->
+
+
+<div class="modal fade" id="sales-page">
+    <div class="modal-dialog" style="background-color: #1D191A;">
+        <div class="modal-form" style="max-width: 90%;">
+            <div class="tab-content text-muted">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="https://cdn0.iconfinder.com/data/icons/apple-device/128/device-53-128.png">
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="editable editable-click" data-type="text" data-pk="8" data-url="" data-title="Title" data-name="">Let's Get Started</h3>
+                        <div class="text">
+                            <p class="editable editable-pre-wrapped editable-click" data-type="textarea" data-pk="8" data-url="" data-title="Title" data-name="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="tab-pane transition scale fade" id="sales-form">
+                    <div class="form-control">
+                        <input type="text" name="su-name" id="sa-name" required>
+                        <label for="su-name">Name</label>
+                        <span class="error-label"></span>
+                        <span class="valid-label"></span>
+                    </div>
+                    <div class="form-control">
+                        <input type="email" name="su-email" id="sa-email" required>
+                        <label for="su-email">Email</label>
+                        <span class="error-label"></span>
+                        <span class="valid-label"></span>
+                    </div>
+                    <div class="form-control">
+                        <input type="password" name="su-phone" id="sa-phone" required>
+                        <label for="su-password">Phone Number</label>
+                        <span class="error-label"></span>
+                        <span class="valid-label"></span>
+                    </div>
+                    <label class="checkbox space-top-2x">
+                        <input type="checkbox" checked>Receive Updates
+                    </label>
+                    <div class="clearfix modal-buttons">
+                        <div class="pull-right">
+                            <button type="button" class="btn btn-float btn-default waves-effect" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-float btn-success waves-effect waves-success">Send Call Request</button>
+                        </div>
+                        <!-- Schedule a Call -->
+                        <div class="pull-left"><a class="btn btn-flat btn-success waves-effect waves-success" href="https://ga.youcanbook.me/" target="_blank">Schedule A Call Instead</a>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <!-- Hidden real nav tabs -->
+            <ul class="nav-tabs hidden">
+                <li id="form-3"><a href="#sales-form" data-toggle="tab">Request A Call</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+
+
+
+
